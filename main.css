@@ -1,22 +1,35 @@
 .grid {
 	display: grid;
-	grid-template-columns: 600px 150px;
-	grid-template-rows: 50px 400px 50px;
-	grid-template-areas: "header header"
-						 "main aside"
-						 "footer footer";
+	width: 100%;
+	/* one column, auto rows */
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "header"
+						 "main"
+						 "aside"
+						 "footer";
+}
+@media (min-width: 480px) {
+	.grid {
+		/* two columns, auto rows */
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "header header"
+							 "main aside"
+							 "footer footer";
+	}
 }
 header {
 	grid-area: header;
 	background-color: #ccc;
 }
 main {
-	background-color: gray;
 	grid-area: main;
+	background-color: gray;
 }
 aside {
-	background-color: #eee;
 	grid-area: aside;
+	background-color: #eee;
 }
 footer {
 	grid-area: footer;
