@@ -2,24 +2,23 @@
 	display: grid;
 	grid-template-columns: 600px 150px;
 	grid-template-rows: 50px 400px 50px;
+	grid-template-areas: "header header"
+						 "main aside"
+						 "footer footer";
 }
 header {
-	grid-column: 1 / 2;
-	grid-row: 1 / 1;
+	grid-area: header;
 	background-color: #ccc;
 }
 main {
 	background-color: gray;
-	grid-column: 1 / 1;
-	grid-row: 2 / 2;
+	grid-area: main;
 }
 aside {
 	background-color: #eee;
-	grid-column: 2 / 2;
-	grid-row: 2 / 2;
+	grid-area: aside;
 }
 footer {
-	grid-column: 1 / 2;
-	grid-row: 3 / 3;
-	background-color: #252525;
+	grid-area: footer;
+	background-color: #bbb;
 }
