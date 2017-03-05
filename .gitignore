@@ -1,0 +1,5 @@
+.DS_Store
+.vscode
+*.sublime-workspace
+*.sublime-project
+node_modules
