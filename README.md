@@ -2,5 +2,9 @@
 
 > fun with CSS grids
 
-Checkout [Grid by Example](http://gridbyexample.com/)!
 Please checkout the repositories tags for different versions!
+
+## Resources
+
+- [Grid by Example](http://gridbyexample.com/)
+- [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
